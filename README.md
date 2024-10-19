@@ -1,0 +1,3 @@
+# kuromoji test
+
+Kuromoji のテスト
