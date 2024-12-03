@@ -28,11 +28,13 @@ const tokenize = async () => {
 
   output.value!.value = JSON.stringify(result, null, 2);
 };
+
+const test = undefined;
 </script>
 
 <template>
   <main>
-    <textarea ref="input" v-model="text" />
+    <textarea ref="input" v-model="text" :test="test?.hoge" />
     <textarea ref="output" class="output" readonly />
     <button @click="tokenize" :disabled="isLoading">Kuromoji</button>
   </main>
